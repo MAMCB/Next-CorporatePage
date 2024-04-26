@@ -1,9 +1,9 @@
 import React from 'react'
 
-const page = () => {
+const PerformancePage = () => {
   return (
     <div><h1>Performance</h1></div>
   )
 }
 
-export default page
+export default PerformancePage;

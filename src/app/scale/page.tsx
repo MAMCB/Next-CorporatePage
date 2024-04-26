@@ -1,9 +1,9 @@
 import React from 'react'
 
-const page = () => {
+const ScalePage = () => {
   return (
     <div><h1>Scale</h1></div>
   )
 }
 
-export default page
+export default ScalePage
