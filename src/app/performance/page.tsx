@@ -3,10 +3,12 @@ import performanceImage from "/public/performance.jpg";
 
 const PerformancePage = () => {
   return (
-    <div>
-        <Hero title="Performance" imgObject={{img:performanceImage,description:"car racing"}} />
-     
-    </div>
+    <>
+      <Hero
+        title="We serve high performance applications"
+        imgObject={{ img: performanceImage, description: "welding" }}
+      />
+    </>
   );
 };
 

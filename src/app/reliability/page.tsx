@@ -3,10 +3,10 @@ import reliabilityImage from "/public/reliability.jpg";
 
 const ReliabilityPage = () => {
   return (
-    <div>
-        <Hero title="Reliability" imgObject={{ img: reliabilityImage, description: "car engine" }} />
+    <>
+        <Hero title="Super high reliability hosting" imgObject={{ img: reliabilityImage, description: "welding" }} />
     
-    </div>
+    </>
   );
 };
 

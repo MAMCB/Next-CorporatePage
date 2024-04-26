@@ -6,10 +6,15 @@ import { HeroProps } from "@/app/utils/interfaces";
 
 const Hero: React.FC<HeroProps> = ({title,imgObject}) => {
   return (
-    <>
-      <h1 className="text-white">{title}</h1>
-      <BackgroundImage img={imgObject.img} description={imgObject.description} />
-    </>
+    <div className="relative h-screen">
+      <BackgroundImage
+        img={imgObject.img}
+        description={imgObject.description}
+      />
+      <div className="pt-48 flex justify-center items-center">
+        <h1 className="text-white text-6xl">{title}</h1>
+      </div>
+    </div>
   );
 };
 
