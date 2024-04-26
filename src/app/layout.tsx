@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Link from "next/link";
+import Header from "../components/header";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -12,30 +12,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="p-8 mb-8 bg-gray-300">
-          <ul className="flex justify-evenly">
-            <li className="bg-transparent p-5 rounded-xl shadow-xl">
-              <Link href="/">Home</Link>
-            </li>
-            <li className="bg-transparent p-5 rounded-xl shadow-xl">
-              <Link href="/performance">Performance</Link>
-            </li>
-            <li className="bg-transparent p-5 rounded-xl shadow-xl">
-              <Link href="/reliability">Reliability</Link>
-            </li>
-            <li className="bg-transparent p-5 rounded-xl shadow-xl">
-              <Link href="/scale">Scale</Link>
-            </li>
-          </ul>
-        </nav>
-        {children}
-      </body>
+        <Header />
+        {children}</body>
     </html>
   );
 }
