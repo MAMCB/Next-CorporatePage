@@ -1,11 +1,11 @@
-import BackgroundImage from "@/components/backgroundImage";
+import Hero from "@/components/hero";
 import performanceImage from "/public/performance.jpg";
 
 const PerformancePage = () => {
   return (
     <div>
-      <h1 className="text-white">Performance</h1>
-      <BackgroundImage img={performanceImage} description="car racing" />
+        <Hero title="Performance" imgObject={{img:performanceImage,description:"car racing"}} />
+     
     </div>
   );
 };
