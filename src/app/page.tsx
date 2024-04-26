@@ -1,4 +1,4 @@
-import Image from "next/image";
+import BackgroundImage from "@/components/backgroundImage";
 import homeImg from"/public/home.jpg";
 
 export default function Home() {
@@ -6,14 +6,7 @@ export default function Home() {
   return (
     <div>
       <h1 className="text-white">Home Page</h1>
-      <div className="absolute -z-10 inset-0">
-        <Image
-          src={homeImg}
-          alt="car factory"
-          fill
-          style={{ objectFit: "cover" }}
-        />
-      </div>
+      <BackgroundImage img={homeImg} description="car factory" />
     </div>
   );
 }
